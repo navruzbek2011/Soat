@@ -1,0 +1,41 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font: bold 12px Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+.clock {
+  color: aqua;
+  padding: 40px;
+  transition: .5s;
+  animation: navruz 1s infinite;
+  transform-style: preserve-3d;
+}
+#Date {
+  font-size: 20px !important;
+  text-align: center;
+}
+
+.clock ul {
+  list-style: none;
+  display: flex;
+  font-size: 90px;
+  gap: 15px;
+}
+@keyframes navruz {
+  0% {
+    transform: (0deg);
+    
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
